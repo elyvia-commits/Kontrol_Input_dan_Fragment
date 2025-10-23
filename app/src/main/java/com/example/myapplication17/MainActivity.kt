@@ -33,5 +33,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("EXTRA_USERNAME", username)
             startActivity(intent)
         }
+
+        val btnDaftar: Button = findViewById(R.id.btnDaftar)
+        btnDaftar.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
